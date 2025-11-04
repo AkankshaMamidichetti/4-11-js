@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// console.log(a()); 
+// console.log(b());
+
+// function a() {
+//   return "Function Declaration";          //the function declaration can be hosted
+// }
+
+// var b = function() {
+//   return "Function Expression";            //the function expression  can be hosted because when "var" is hosted it is unfinited
+// };
+// output: Function Declaration
+//  Uncaught TypeError: b is not a function
+// ------------------------------------------------------------------
+// let greet = function() {
+//   return "Hello!";
+// };
+// console.log(typeof greet);  //function
+// console.log(greet.name);    //greet
+
+// output:
+// function
+// greet
+// Even anonymous functions get an inferred name (greet) when assigned to a variable.
+// ---------------------------------------------------------------------
+// let result = (function(x, y) {
+//   return x * y;
+// })(3, 4);            //the function call immediatly with the function definition
+
+// console.log(result);
+// output:12
+// ---------------------------------------------------------------------------------
+// let user = {
+//   name: "Noor",
+//   say: () => {
+//     console.log(this.name);
+//   },
+// };
+// user.say();
+// output: no output
+// -----------------------------------------------------------------------------------
+/////////////first class function or first class citizens
+// function greet(name) {
+//   return "Hello " + name;
+// }
+
+// function execute(fn, value) {
+//   return fn(value);
+// }
+
+// console.log(execute(greet, "Students"));              //the one function can be used as argument or return  for the other function is known as first class function
+// //here greet() is the first function and that is used as the argumnt to the other function execute()
+// output:Hello Students
+// --------------------------------------------------------------------------------
+// ///////// Pure Function
+// let count = 0;
+// function add(a, b) {
+//   return a + b;
+// }
+// console.log(add(3, 4));   
+// console.log(count);
+// output: 7 0
+// ----------------------------------------------------------------------------------------
+// function multiply(a, b = 5) {
+//   return a * b;
+// }
+// console.log(multiply(3));    // it takes value 5 because no value given for the argument at the time of function call
+// console.log(multiply(3, 2));  //it takes value 2 for parameter b because the value is given .if it not given it will use default value 5
+// // default parameter: the value for the argument is given at the time function definition.if the value for the argument is not given at the time of function call then it uses default value
+// output: 15 6
+// ---------------------------------------------------------------------
+// function factorial(n) {
+//   if (n === 1) return 1;
+//   return n * factorial(n - 1);    //calling itself the same function
+// }
+// console.log(factorial(4));
+// // calling the function repetedly itself until met the condition
+// output:24
+// ---------------------------------------------------------------------
+// function printResult(fn, num) {
+//   console.log(fn(num));
+// }
+
+// function double(n) {
+//   return n * 2;
+// }
+
+// printResult(double, 10);  //double is the argument fn(num) → double(10) → 20
+// output: 20
+
+
+
+    </script>
+</body>
+</html>
